@@ -1,0 +1,3 @@
+/ethereum_user_auth/build/
+node_modules/
+*.log

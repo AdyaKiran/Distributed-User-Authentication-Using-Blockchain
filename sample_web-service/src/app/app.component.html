@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<script  type="text/javascript" src="app.js"></script>-->
+<div ng-app="WebsiteApp" ng-controller="WebsiteControl">
+  <!--<h1>
+    Welcome to {{ title }}!
+  </h1> -->
+  <form>
+    <div class="container">
+      <h1>
+        Website Page
+      </h1>
+      <p>
+        This is a simulation of a demo website, in order to demostrate how a website communicates with the blockchain and fetches user data.
+      </p>
+      <hr>
+      <p><b>Current Account in Use: </b>{{transferFrom}}</p>
+      <hr>
+      <p><b>Enter Smart Contract Address:  </b></p>
+      <input [(ngModel)]="contractAddress" type="text" placeholder="Enter Contract Address" name="uname" required>
+
+      <!-- <p><b>Enter ABI </b></p> -->
+      <!-- <textarea></textarea> -->
+
+      <!-- <button (click)="fetchUserData(contractAddress)"  type="submit" class="registerbtn">Fetch User Data</button> -->
+
+      <button (click)="getDataOfUser(contractAddress)"  type="submit" class="registerbtn">Get The User Data</button>
+
+      <hr>
+      The following is the data of the user: 
+
+      <p><b> Username : </b>{{userDetails.username}}</p>
+      <p><b> Name : </b>{{userDetails.fullName}}</p>
+      <p><b> Date Of Birth: </b>{{userDetails.dob}}</p>      
+      <p><b> Passport Number: </b>{{userDetails.passportNo}}</p>
+      <p><b> Adhaar Number: </b>{{userDetails.adhaarNo}}</p>
+
+
+    </div>
+  
+    <!--<div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div> -->
+  </form>
+</div>
+<router-outlet></router-outlet>

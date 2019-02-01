@@ -1,0 +1,28 @@
+{
+    "context_name": "eth_699460CE99",
+    "latest_block_number": -1,
+    "oar": "0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475",
+    "node": {
+        "main": "http://127.0.0.1:7549",
+        "backup": []
+    },
+    "contracts": {
+        "connector": {
+            "binary": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/contracts/binary/oraclizeConnector.binary",
+            "abi": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/contracts/abi/oraclizeConnector.json",
+            "source": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"
+        },
+        "oar": {
+            "binary": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/contracts/binary/addressResolver.binary",
+            "abi": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/contracts/abi/addressResolver.json",
+            "source": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"
+        }
+    },
+    "deterministic_oar": true,
+    "deploy_gas": 3700000,
+    "account": "0xaa0f0da565904b609ef5be8ee4ebd566b577769d",
+    "mode": "active",
+    "key_file": "/Users/ashakiran1/Desktop/EthereumUserAuth/ethereum-bridge/config/instance/keys.json",
+    "gas_price": 20000000000,
+    "connector": "0x929553f47d5694befcc7037b03a9b29da859283b"
+}
